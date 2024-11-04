@@ -1,0 +1,648 @@
+@font-face {
+    font-family: 'Migra-Extrabold';
+    /* Nome da fonte que você vai usar */
+    src: url('/assets/fonts/Migra-Extrabold.woff2') format('woff2'),
+        /* Caminho para o arquivo da fonte */
+        url('/assets/fonts/Migra-Extrabold.woff') format('woff');
+    /* Fonte secundária */
+    font-weight: normal;
+    /* Peso da fonte (normal, bold, etc.) */
+    font-style: normal;
+    /* Estilo da fonte (normal, italic, etc.) */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --primary-color: #535836;
+    --secondary-color: #AEA38E;
+    --text-color-01: #DDDBD7;
+    --text-color-02: #593B1F;
+    --text-color-03: #2E2623;
+    --text-color-04: #F8F8F8;
+    --text-color-05: #1A1616;
+}
+
+body {
+    background-color: #DDDBD7;
+}
+
+.interface {
+    max-width: 1820px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* EVENT FORM */
+
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)), url('../img/um\ wallpaper\ clean\ com\ as\ cores\ verdes\ olive\ e\ cream\ com\ elementos\ do\ marketing\ digital.png');
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color-04);
+}
+
+#disclaimer h1,
+#disclaimer .event-date {
+    color: var(--secondary-color);
+}
+
+#disclaimer h1 {
+    font-size: 5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-family: 'Migra-Extrabold';
+}
+
+#disclaimer .about-event {
+    font-size: 1.5em;
+    text-indent: 20px;
+    max-width: 1250px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: .3rem;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+    font-size: 1.8em;
+
+
+}
+
+#subscription-form {
+    background-color: #535836ab;
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 25px 0 25px;
+}
+
+#subscription-form {
+    font-size: 1.5em;
+    color: var(--text-color-01);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .8em;
+}
+
+.form-group label {
+    color: var(--text-color-01);
+    margin-bottom: .8em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--text-color-01);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: .8;
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: var(--secondary-color);
+    color: var(--text-color-01);
+}
+
+/* Benefits section */
+section.aprendizado {
+    padding: 180px 0;
+    background-color: var(--text-color-01);
+}
+
+.txt-aprender,
+.conteudo-work {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.aprendizado .txt-aprender h2 {
+    font-size: 4em;
+    font-family: 'Migra-Extrabold';
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    margin-right: 30px;
+}
+
+.aprendizado .txt-aprender {
+    position: sticky;
+    top: 50%;
+    padding-bottom: 5px;
+}
+
+
+.conteudo-work .cont-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    border: 1.5px solid var(--primary-color);
+    background-color: #aea38e25;
+    border-radius: 25px;
+    box-shadow: 0 0 8px #1413139d;
+    padding: 10px;
+}
+
+.conteudo-work .cont-box img {
+    max-width: 180px;
+    border-radius: 15px 0 15px;
+}
+
+.conteudo-work .cont-box h4 {
+    font-family: 'Migra-Extrabold';
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.conteudo-work .cont-box p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var();
+}
+
+.conteudo-work .cont-box ul li {
+    list-style-type: none;
+
+}
+
+.conteudo-work .cont-box ul li span {
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.btn-inscricoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 80px;
+    background-color: none;
+    text-decoration: none;
+}
+
+.aprendizado .btn-inscricoes a button {
+    width: 580px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0 0 8px #1a161691;
+    border: none;
+    font-size: 2em;
+    font-family: 'Migra-Extrabold';
+    color: var(--text-color-01);
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    opacity: .8;
+
+}
+
+.btn-inscricoes a button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Event Location */
+
+#location {
+    height: 450px;
+    background: linear-gradient(rgba(5, 4, 4, 0.8), rgba(0, 0, 0, 0.8)), url('../img/um\ wallpaper\ clean\ com\ as\ cores\ verdes\ olive\ e\ cream\ com\ elementos\ do\ marketing\ digital.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color-01);
+    margin-bottom: 3em;
+}
+
+#address,
+#about-location {
+    max-width: 30%;
+}
+
+#location #about-location h3 {
+    color: var(--secondary-color);
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--secondary-color);
+    font-size: 5em;
+    margin-right: .8em;
+}
+
+#address-dateils {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#about-location h3 {
+    color: var(--text-color-01);
+    font-size: 2.5em;
+    font-family: 'Migra-Extrabold';
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-location p {
+    line-height: 1em;
+}
+
+/* Event details Container */
+
+#details {
+    width: 90%;
+    max-width: 1820%;
+    margin: 0 auto;
+
+}
+
+.detail {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detail img {
+    width: 50%;
+    border-radius: 15px 0 15px;
+    box-shadow: 0 0 8px #1413139d;
+}
+
+.detail h2 {
+    margin: 0 auto;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Migra-Extrabold';
+    color: var(--primary-color);
+
+}
+
+.detail h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform: translateX(-50%);
+    height: 2.5px;
+    width: 100px;
+    background-color: #AEA38E;
+    border-radius: 25px;
+}
+
+
+.detail h3 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    position: relative;
+}
+
+
+.detail-description ul {
+    list-style-position: inside;
+}
+
+.detail-description ul li {
+    margin-bottom: .4em;
+}
+
+.detail-description ul li:last-child {
+    font-weight: bolder;
+}
+
+/* Call to Action SECTION*/
+
+#cta {
+    height: 450px;
+    background: linear-gradient(rgba(7, 6, 6, 0.9), rgba(0, 0, 0, 0.8)), url('../img/um\ wallpaper\ clean\ com\ as\ cores\ verdes\ olive\ e\ cream\ com\ elementos\ do\ marketing\ digital.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-01);
+
+}
+
+#cta h3 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    font-weight: 500;
+    font-family: 'Migra-Extrabold';
+    color: var(--text-color-01);
+}
+
+#cta .btn-cta {
+    width: 580px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0 0 8px #1a161691;
+    border: none;
+    font-size: 2em;
+    font-family: 'Migra-Extrabold';
+    color: var(--text-color-01);
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    opacity: .8;
+    transition: .5s ease-in-out;
+}
+
+#cta .btn-cta:hover {
+    opacity: 1;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+#footer {
+    text-align: center;
+    color: var(--text-color-03);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#foooter h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    .btn-cta,
+    .btn-inscricoes,
+    .btn {
+        opacity: 1;
+    }
+
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #event-description h1 {
+        font-size: 3.8em;
+    }
+
+    #disclaimer .about-event {
+        margin: 20px;
+    }
+
+    #disclaimer p,
+    .event-date {
+        margin-left: 20px;
+    }
+
+    #disclaimer .event-date {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+    }
+
+    #subscription-form {
+        max-width: 80%;
+        margin-bottom: 2em;
+    }
+
+    #subscription-form p {
+        margin-bottom: 1em;
+        font-size: .73em;
+        font-weight: 600;
+    }
+
+    /* BENEFITS SECTION */
+
+    section.aprendizado {
+        padding: 60px 0;
+    }
+
+    .txt-aprender,
+    .conteudo-work {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .aprendizado .txt-aprender h2 {
+        font-size: 2em;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .aprendizado .txt-aprender {
+        position: static;
+        top: auto;
+        padding-bottom: 15px;
+    }
+
+    .conteudo-work .cont-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .conteudo-work .cont-box img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .conteudo-work .cont-box h4 {
+        font-size: 1.5em;
+    }
+
+    .conteudo-work .cont-box p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .btn-inscricoes {
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .aprendizado .btn-inscricoes a button {
+        width: 90%;
+        height: 60px;
+        font-size: 1.5em;
+    }
+
+
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* EVENT DETAILS CONTAINER */
+
+    .detail {
+        flex-direction: column;
+        margin-bottom: 1.5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+
+    #detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+
+    /* CALL TO ACTION SECTION */
+
+    #cta {
+        text-align: center;
+        font-size: .9em;
+    }
+
+    #cta .btn-cta {
+        width: 80%;
+    }
+
+
+    /* FOOTER */
+
+    #footer {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}
+
+/* Desktop */
+@media (max-width: 1290px){
+    body{
+        max-width: 1280px;
+        
+    }
+    #disclaimer .about-event {
+            margin: 20px;
+        }
+    
+        #disclaimer p,
+        .event-date {
+            margin-left: 20px;
+        }
+    
+        #disclaimer .event-date {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+    
+        #subscription-form {
+            max-width: 80%;
+            margin: 0 2em;
+
+        }
+    
+        #subscription-form p {
+            margin-bottom: 1em;
+            font-size: .73em;
+            font-weight: 600;
+        }
+}
