@@ -45,7 +45,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)), url('../img/um\ wallpaper\ clean\ com\ as\ cores\ verdes\ olive\ e\ cream\ com\ elementos\ do\ marketing\ digital.png');
     background-position: center;
     background-size: cover;
-    height: 85vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -443,6 +443,7 @@ section.aprendizado {
     #event-description {
         flex-direction: column;
         height: auto;
+        
     }
 
     #event-description h1 {
@@ -620,6 +621,10 @@ section.aprendizado {
         max-width: 1280px;
         
     }
+
+        #event-description{
+            height: 100%;
+        }
     #disclaimer .about-event {
             margin: 20px;
         }
